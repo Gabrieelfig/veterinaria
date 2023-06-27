@@ -1,0 +1,26 @@
+# veterinaria
+
+# JavaScript
+Projetos com resolusao de exercicios em JavaScript
+
+<meta charset="utf-8">
+<script>
+
+
+const prompt = require("prompt-sync")() // adiciona o pacote ao programa
+  // add the package to the program
+const pesoKg = Number(prompt("Peso da Ração (kg): ")) // lê dados de entrada
+  // read input data
+const consumo = Number(prompt("Consumo Diário (gr): "))
+const pesoGr = pesoKg * 1000 // cria variável auxiliar pesoGr
+  // create auxiliary variable weightGr
+const duracao = Math.floor(pesoGr / consumo) // cálculo das respostas
+  // calculation of answers
+
+
+const sobra = pesoGr % consumo
+console.log(`Duração: ${duracao} dias`) // dados de saída
+  // output data
+console.log(`Sobra: ${sobra}gr`)
+
+</script>
